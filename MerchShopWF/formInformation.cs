@@ -45,7 +45,7 @@ namespace MerchShopWF
                 var bindingList = new BindingList<GlobalInfo>(InfoList);
                 var source = new BindingSource(bindingList, null);
                 dataGridView1.DataSource = source;
-                int i = 2;
+                int i = 1;
             }
         }
     }
