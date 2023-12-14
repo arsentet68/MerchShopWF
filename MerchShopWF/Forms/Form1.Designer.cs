@@ -82,6 +82,7 @@
             buttonExit.TabIndex = 3;
             buttonExit.Text = "Выход";
             buttonExit.UseVisualStyleBackColor = false;
+            buttonExit.Click += buttonExit_Click;
             // 
             // Form1
             // 

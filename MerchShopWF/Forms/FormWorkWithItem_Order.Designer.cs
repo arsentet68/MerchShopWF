@@ -44,27 +44,30 @@
             // labelItem
             // 
             labelItem.AutoSize = true;
+            labelItem.Font = new Font("Segoe UI", 15F, FontStyle.Regular, GraphicsUnit.Point);
             labelItem.Location = new Point(48, 44);
             labelItem.Name = "labelItem";
-            labelItem.Size = new Size(51, 20);
+            labelItem.Size = new Size(84, 35);
             labelItem.TabIndex = 0;
             labelItem.Text = "Товар";
             // 
             // labelOrder
             // 
             labelOrder.AutoSize = true;
+            labelOrder.Font = new Font("Segoe UI", 15F, FontStyle.Regular, GraphicsUnit.Point);
             labelOrder.Location = new Point(51, 96);
             labelOrder.Name = "labelOrder";
-            labelOrder.Size = new Size(47, 20);
+            labelOrder.Size = new Size(78, 35);
             labelOrder.TabIndex = 1;
             labelOrder.Text = "Заказ";
             // 
             // labelUnits
             // 
             labelUnits.AutoSize = true;
-            labelUnits.Location = new Point(52, 158);
+            labelUnits.Font = new Font("Segoe UI", 15F, FontStyle.Regular, GraphicsUnit.Point);
+            labelUnits.Location = new Point(51, 146);
             labelUnits.Name = "labelUnits";
-            labelUnits.Size = new Size(90, 20);
+            labelUnits.Size = new Size(150, 35);
             labelUnits.TabIndex = 2;
             labelUnits.Text = "Количество";
             // 
@@ -72,9 +75,9 @@
             // 
             comboBoxItem.DropDownStyle = ComboBoxStyle.DropDownList;
             comboBoxItem.FormattingEnabled = true;
-            comboBoxItem.Location = new Point(145, 43);
+            comboBoxItem.Location = new Point(370, 44);
             comboBoxItem.Name = "comboBoxItem";
-            comboBoxItem.Size = new Size(151, 28);
+            comboBoxItem.Size = new Size(195, 28);
             comboBoxItem.TabIndex = 3;
             comboBoxItem.TextChanged += ComboBoxItem_TextChanged;
             // 
@@ -82,9 +85,9 @@
             // 
             comboBoxOrder.DropDownStyle = ComboBoxStyle.DropDownList;
             comboBoxOrder.FormattingEnabled = true;
-            comboBoxOrder.Location = new Point(145, 93);
+            comboBoxOrder.Location = new Point(370, 96);
             comboBoxOrder.Name = "comboBoxOrder";
-            comboBoxOrder.Size = new Size(151, 28);
+            comboBoxOrder.Size = new Size(195, 28);
             comboBoxOrder.TabIndex = 4;
             comboBoxOrder.TextChanged += ComboBoxOrder_TextChanged;
             // 
@@ -93,7 +96,7 @@
             buttonAddEntry.Enabled = false;
             buttonAddEntry.Location = new Point(60, 218);
             buttonAddEntry.Name = "buttonAddEntry";
-            buttonAddEntry.Size = new Size(136, 29);
+            buttonAddEntry.Size = new Size(183, 64);
             buttonAddEntry.TabIndex = 5;
             buttonAddEntry.Text = "Добавить запись";
             buttonAddEntry.UseVisualStyleBackColor = true;
@@ -103,9 +106,9 @@
             // buttonUpdateEntry
             // 
             buttonUpdateEntry.Enabled = false;
-            buttonUpdateEntry.Location = new Point(224, 218);
+            buttonUpdateEntry.Location = new Point(60, 218);
             buttonUpdateEntry.Name = "buttonUpdateEntry";
-            buttonUpdateEntry.Size = new Size(145, 29);
+            buttonUpdateEntry.Size = new Size(181, 64);
             buttonUpdateEntry.TabIndex = 6;
             buttonUpdateEntry.Text = "Изменить запись";
             buttonUpdateEntry.UseVisualStyleBackColor = true;
@@ -114,9 +117,9 @@
             // 
             // buttonBack
             // 
-            buttonBack.Location = new Point(617, 366);
+            buttonBack.Location = new Point(410, 218);
             buttonBack.Name = "buttonBack";
-            buttonBack.Size = new Size(94, 29);
+            buttonBack.Size = new Size(155, 55);
             buttonBack.TabIndex = 7;
             buttonBack.Text = "Назад";
             buttonBack.UseVisualStyleBackColor = true;
@@ -124,7 +127,7 @@
             // 
             // buttonAddItem
             // 
-            buttonAddItem.Location = new Point(329, 40);
+            buttonAddItem.Location = new Point(610, 44);
             buttonAddItem.Name = "buttonAddItem";
             buttonAddItem.Size = new Size(40, 29);
             buttonAddItem.TabIndex = 8;
@@ -134,7 +137,7 @@
             // 
             // buttonAddOrder
             // 
-            buttonAddOrder.Location = new Point(329, 92);
+            buttonAddOrder.Location = new Point(610, 96);
             buttonAddOrder.Name = "buttonAddOrder";
             buttonAddOrder.Size = new Size(40, 29);
             buttonAddOrder.TabIndex = 9;
@@ -144,9 +147,9 @@
             // 
             // textBoxUnits
             // 
-            textBoxUnits.Location = new Point(171, 155);
+            textBoxUnits.Location = new Point(370, 155);
             textBoxUnits.Name = "textBoxUnits";
-            textBoxUnits.Size = new Size(125, 27);
+            textBoxUnits.Size = new Size(195, 27);
             textBoxUnits.TabIndex = 10;
             textBoxUnits.TextChanged += textBoxUnits_TextChanged;
             // 
@@ -154,7 +157,7 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(669, 342);
             Controls.Add(textBoxUnits);
             Controls.Add(buttonAddOrder);
             Controls.Add(buttonAddItem);

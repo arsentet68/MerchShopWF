@@ -40,43 +40,45 @@
             // labelName
             // 
             labelName.AutoSize = true;
+            labelName.Font = new Font("Segoe UI", 15F, FontStyle.Regular, GraphicsUnit.Point);
             labelName.Location = new Point(69, 44);
             labelName.Name = "labelName";
-            labelName.Size = new Size(39, 20);
+            labelName.Size = new Size(65, 35);
             labelName.TabIndex = 0;
             labelName.Text = "Имя";
             // 
             // labelEmail
             // 
             labelEmail.AutoSize = true;
+            labelEmail.Font = new Font("Segoe UI", 15F, FontStyle.Regular, GraphicsUnit.Point);
             labelEmail.Location = new Point(71, 97);
             labelEmail.Name = "labelEmail";
-            labelEmail.Size = new Size(52, 20);
+            labelEmail.Size = new Size(85, 35);
             labelEmail.TabIndex = 1;
             labelEmail.Text = "E-mail";
             // 
             // textBoxName
             // 
-            textBoxName.Location = new Point(185, 41);
+            textBoxName.Location = new Point(185, 52);
             textBoxName.Name = "textBoxName";
-            textBoxName.Size = new Size(125, 27);
+            textBoxName.Size = new Size(230, 27);
             textBoxName.TabIndex = 2;
             textBoxName.TextChanged += textBoxName_TextChanged;
             // 
             // textBoxEmail
             // 
-            textBoxEmail.Location = new Point(185, 90);
+            textBoxEmail.Location = new Point(185, 106);
             textBoxEmail.Name = "textBoxEmail";
-            textBoxEmail.Size = new Size(125, 27);
+            textBoxEmail.Size = new Size(230, 27);
             textBoxEmail.TabIndex = 3;
             textBoxEmail.TextChanged += textBoxEmail_TextChanged;
             // 
             // buttonAddEntry
             // 
             buttonAddEntry.Enabled = false;
-            buttonAddEntry.Location = new Point(71, 153);
+            buttonAddEntry.Location = new Point(69, 181);
             buttonAddEntry.Name = "buttonAddEntry";
-            buttonAddEntry.Size = new Size(148, 29);
+            buttonAddEntry.Size = new Size(205, 52);
             buttonAddEntry.TabIndex = 4;
             buttonAddEntry.Text = "Добавить запись";
             buttonAddEntry.UseVisualStyleBackColor = true;
@@ -86,9 +88,9 @@
             // buttonUpdateEntry
             // 
             buttonUpdateEntry.Enabled = false;
-            buttonUpdateEntry.Location = new Point(257, 153);
+            buttonUpdateEntry.Location = new Point(69, 181);
             buttonUpdateEntry.Name = "buttonUpdateEntry";
-            buttonUpdateEntry.Size = new Size(150, 29);
+            buttonUpdateEntry.Size = new Size(203, 52);
             buttonUpdateEntry.TabIndex = 5;
             buttonUpdateEntry.Text = "Изменить запись";
             buttonUpdateEntry.UseVisualStyleBackColor = true;
@@ -97,9 +99,9 @@
             // 
             // buttonBack
             // 
-            buttonBack.Location = new Point(628, 363);
+            buttonBack.Location = new Point(352, 173);
             buttonBack.Name = "buttonBack";
-            buttonBack.Size = new Size(94, 29);
+            buttonBack.Size = new Size(189, 60);
             buttonBack.TabIndex = 6;
             buttonBack.Text = "Назад";
             buttonBack.UseVisualStyleBackColor = true;
@@ -109,7 +111,7 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(585, 275);
             Controls.Add(buttonBack);
             Controls.Add(buttonUpdateEntry);
             Controls.Add(buttonAddEntry);

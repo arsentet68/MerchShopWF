@@ -428,5 +428,25 @@ namespace MerchShopWF
             formInformation.Show();
             Close();
         }
+
+        private void buttonAddCustomer_Click(object sender, EventArgs e)
+        {
+            FormWorkWithCustomer formWorkWithCustomer = new FormWorkWithCustomer();
+            formWorkWithCustomer.actionNumber = 1;
+            formWorkWithCustomer.Text = "Добавление записи";
+            formWorkWithCustomer.Tag = this;
+            formWorkWithCustomer.Show();
+            Hide();
+        }
+
+        private void buttonAddItem_Click(object sender, EventArgs e)
+        {
+            FormWorkWithItem formWorkWithItem = new FormWorkWithItem();
+            formWorkWithItem.actionNumber = 1;
+            formWorkWithItem.Text = "Добавление записи";
+            formWorkWithItem.Tag = this;
+            formWorkWithItem.Show();
+            Hide();
+        }
     }
 }

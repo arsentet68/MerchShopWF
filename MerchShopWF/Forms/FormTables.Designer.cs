@@ -39,11 +39,11 @@
             // 
             // buttonPerformer
             // 
-            buttonPerformer.BackColor = Color.DimGray;
-            buttonPerformer.ForeColor = Color.White;
-            buttonPerformer.Location = new Point(306, 44);
+            buttonPerformer.BackColor = Color.Silver;
+            buttonPerformer.ForeColor = Color.Black;
+            buttonPerformer.Location = new Point(235, 12);
             buttonPerformer.Name = "buttonPerformer";
-            buttonPerformer.Size = new Size(137, 29);
+            buttonPerformer.Size = new Size(295, 54);
             buttonPerformer.TabIndex = 0;
             buttonPerformer.Text = "Исполнители";
             buttonPerformer.UseVisualStyleBackColor = false;
@@ -51,11 +51,11 @@
             // 
             // buttonAlbums
             // 
-            buttonAlbums.BackColor = Color.DimGray;
-            buttonAlbums.ForeColor = Color.White;
-            buttonAlbums.Location = new Point(306, 102);
+            buttonAlbums.BackColor = Color.Silver;
+            buttonAlbums.ForeColor = SystemColors.ControlText;
+            buttonAlbums.Location = new Point(235, 82);
             buttonAlbums.Name = "buttonAlbums";
-            buttonAlbums.Size = new Size(137, 29);
+            buttonAlbums.Size = new Size(295, 56);
             buttonAlbums.TabIndex = 1;
             buttonAlbums.Text = "Альбомы";
             buttonAlbums.UseVisualStyleBackColor = false;
@@ -63,59 +63,64 @@
             // 
             // buttonItems
             // 
-            buttonItems.Location = new Point(327, 163);
+            buttonItems.BackColor = Color.Silver;
+            buttonItems.Location = new Point(235, 154);
             buttonItems.Name = "buttonItems";
-            buttonItems.Size = new Size(94, 29);
+            buttonItems.Size = new Size(295, 50);
             buttonItems.TabIndex = 2;
             buttonItems.Text = "Товары";
-            buttonItems.UseVisualStyleBackColor = true;
+            buttonItems.UseVisualStyleBackColor = false;
             buttonItems.Click += buttonItems_Click;
             // 
             // buttonCustomers
             // 
-            buttonCustomers.Location = new Point(327, 224);
+            buttonCustomers.BackColor = Color.Silver;
+            buttonCustomers.Location = new Point(235, 226);
             buttonCustomers.Name = "buttonCustomers";
-            buttonCustomers.Size = new Size(116, 29);
+            buttonCustomers.Size = new Size(295, 56);
             buttonCustomers.TabIndex = 3;
             buttonCustomers.Text = "Покупатели";
-            buttonCustomers.UseVisualStyleBackColor = true;
+            buttonCustomers.UseVisualStyleBackColor = false;
             buttonCustomers.Click += buttonCustomers_Click;
             // 
             // buttonOrders
             // 
-            buttonOrders.Location = new Point(327, 286);
+            buttonOrders.BackColor = Color.Silver;
+            buttonOrders.Location = new Point(235, 303);
             buttonOrders.Name = "buttonOrders";
-            buttonOrders.Size = new Size(94, 29);
+            buttonOrders.Size = new Size(295, 53);
             buttonOrders.TabIndex = 4;
             buttonOrders.Text = "Заказы";
-            buttonOrders.UseVisualStyleBackColor = true;
+            buttonOrders.UseVisualStyleBackColor = false;
             buttonOrders.Click += buttonOrders_Click;
             // 
             // buttonItem_Order
             // 
-            buttonItem_Order.Location = new Point(327, 350);
+            buttonItem_Order.BackColor = Color.Silver;
+            buttonItem_Order.Location = new Point(235, 380);
             buttonItem_Order.Name = "buttonItem_Order";
-            buttonItem_Order.Size = new Size(116, 29);
+            buttonItem_Order.Size = new Size(295, 58);
             buttonItem_Order.TabIndex = 5;
             buttonItem_Order.Text = "Товар_Заказ";
-            buttonItem_Order.UseVisualStyleBackColor = true;
+            buttonItem_Order.UseVisualStyleBackColor = false;
             buttonItem_Order.Click += buttonItem_Order_Click;
             // 
             // buttonBack
             // 
-            buttonBack.Location = new Point(641, 389);
+            buttonBack.BackColor = Color.Silver;
+            buttonBack.Location = new Point(600, 388);
             buttonBack.Name = "buttonBack";
-            buttonBack.Size = new Size(94, 29);
+            buttonBack.Size = new Size(164, 50);
             buttonBack.TabIndex = 6;
             buttonBack.Text = "Назад";
-            buttonBack.UseVisualStyleBackColor = true;
+            buttonBack.UseVisualStyleBackColor = false;
             buttonBack.Click += buttonBack_Click;
             // 
             // FormTables
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = Color.Black;
+            BackColor = Color.White;
             ClientSize = new Size(800, 450);
             Controls.Add(buttonBack);
             Controls.Add(buttonItem_Order);

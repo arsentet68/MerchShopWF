@@ -42,15 +42,16 @@
             // labelName
             // 
             labelName.AutoSize = true;
+            labelName.Font = new Font("Segoe UI", 15F, FontStyle.Regular, GraphicsUnit.Point);
             labelName.Location = new Point(61, 46);
             labelName.Name = "labelName";
-            labelName.Size = new Size(77, 20);
+            labelName.Size = new Size(125, 35);
             labelName.TabIndex = 0;
             labelName.Text = "Название";
             // 
             // textBoxName
             // 
-            textBoxName.Location = new Point(250, 43);
+            textBoxName.Location = new Point(352, 55);
             textBoxName.Name = "textBoxName";
             textBoxName.Size = new Size(125, 27);
             textBoxName.TabIndex = 1;
@@ -59,15 +60,16 @@
             // labelCountry
             // 
             labelCountry.AutoSize = true;
+            labelCountry.Font = new Font("Segoe UI", 15F, FontStyle.Regular, GraphicsUnit.Point);
             labelCountry.Location = new Point(62, 108);
             labelCountry.Name = "labelCountry";
-            labelCountry.Size = new Size(58, 20);
+            labelCountry.Size = new Size(95, 35);
             labelCountry.TabIndex = 2;
             labelCountry.Text = "Страна";
             // 
             // textBoxCountry
             // 
-            textBoxCountry.Location = new Point(250, 105);
+            textBoxCountry.Location = new Point(352, 108);
             textBoxCountry.Name = "textBoxCountry";
             textBoxCountry.Size = new Size(125, 27);
             textBoxCountry.TabIndex = 3;
@@ -76,15 +78,16 @@
             // labelDebutYear
             // 
             labelDebutYear.AutoSize = true;
+            labelDebutYear.Font = new Font("Segoe UI", 15F, FontStyle.Regular, GraphicsUnit.Point);
             labelDebutYear.Location = new Point(62, 171);
             labelDebutYear.Name = "labelDebutYear";
-            labelDebutYear.Size = new Size(150, 20);
+            labelDebutYear.Size = new Size(249, 35);
             labelDebutYear.TabIndex = 4;
             labelDebutYear.Text = "Год начала карьеры";
             // 
             // textBoxDebutYear
             // 
-            textBoxDebutYear.Location = new Point(250, 164);
+            textBoxDebutYear.Location = new Point(352, 171);
             textBoxDebutYear.Name = "textBoxDebutYear";
             textBoxDebutYear.Size = new Size(125, 27);
             textBoxDebutYear.TabIndex = 5;
@@ -95,7 +98,7 @@
             buttonAddEntry.Enabled = false;
             buttonAddEntry.Location = new Point(61, 233);
             buttonAddEntry.Name = "buttonAddEntry";
-            buttonAddEntry.Size = new Size(159, 29);
+            buttonAddEntry.Size = new Size(232, 66);
             buttonAddEntry.TabIndex = 6;
             buttonAddEntry.Text = "Добавить запись";
             buttonAddEntry.UseVisualStyleBackColor = true;
@@ -104,9 +107,9 @@
             // 
             // buttonBack
             // 
-            buttonBack.Location = new Point(659, 391);
+            buttonBack.Location = new Point(352, 229);
             buttonBack.Name = "buttonBack";
-            buttonBack.Size = new Size(94, 29);
+            buttonBack.Size = new Size(192, 70);
             buttonBack.TabIndex = 7;
             buttonBack.Text = "Назад";
             buttonBack.UseVisualStyleBackColor = true;
@@ -115,9 +118,9 @@
             // buttonUpdateEntry
             // 
             buttonUpdateEntry.Enabled = false;
-            buttonUpdateEntry.Location = new Point(250, 233);
+            buttonUpdateEntry.Location = new Point(61, 233);
             buttonUpdateEntry.Name = "buttonUpdateEntry";
-            buttonUpdateEntry.Size = new Size(162, 29);
+            buttonUpdateEntry.Size = new Size(231, 66);
             buttonUpdateEntry.TabIndex = 8;
             buttonUpdateEntry.Text = "Изменить запись";
             buttonUpdateEntry.UseVisualStyleBackColor = true;
@@ -128,7 +131,7 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(623, 358);
             Controls.Add(buttonUpdateEntry);
             Controls.Add(buttonBack);
             Controls.Add(buttonAddEntry);

@@ -297,17 +297,13 @@ namespace MerchShopWF
         {
             int TotalPrice1 = 0;
             int TotalPrice2 = -1;
-            if (!(int.TryParse(textBoxTotalPrice1.Text, out TotalPrice1)) || TotalPrice1 > TotalPrice2)
+            if (!(int.TryParse(textBoxTotalPrice1.Text, out TotalPrice1)) || !(int.TryParse(textBoxTotalPrice2.Text, out TotalPrice2)))
             {
                 MessageBox.Show("Введите корректную стоимость!", "Внимание!", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                TotalPrice1 = 0;
-                TotalPrice2 = -1;
             }
-            else if (!(int.TryParse(textBoxTotalPrice2.Text, out TotalPrice2)) || TotalPrice1 > TotalPrice2)
+            else if (TotalPrice1 > TotalPrice2)
             {
                 MessageBox.Show("Введите корректную стоимость!", "Внимание!", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                TotalPrice1 = 0;
-                TotalPrice2 = -1;
             }
             else
             {

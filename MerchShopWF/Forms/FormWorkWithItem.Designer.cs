@@ -43,43 +43,46 @@
             // labelName
             // 
             labelName.AutoSize = true;
+            labelName.Font = new Font("Segoe UI", 15F, FontStyle.Regular, GraphicsUnit.Point);
             labelName.Location = new Point(75, 52);
             labelName.Name = "labelName";
-            labelName.Size = new Size(77, 20);
+            labelName.Size = new Size(125, 35);
             labelName.TabIndex = 0;
             labelName.Text = "Название";
             // 
             // labelPrice
             // 
             labelPrice.AutoSize = true;
+            labelPrice.Font = new Font("Segoe UI", 15F, FontStyle.Regular, GraphicsUnit.Point);
             labelPrice.Location = new Point(75, 106);
             labelPrice.Name = "labelPrice";
-            labelPrice.Size = new Size(45, 20);
+            labelPrice.Size = new Size(74, 35);
             labelPrice.TabIndex = 1;
             labelPrice.Text = "Цена";
             // 
             // labelAlbum
             // 
             labelAlbum.AutoSize = true;
+            labelAlbum.Font = new Font("Segoe UI", 15F, FontStyle.Regular, GraphicsUnit.Point);
             labelAlbum.Location = new Point(75, 170);
             labelAlbum.Name = "labelAlbum";
-            labelAlbum.Size = new Size(64, 20);
+            labelAlbum.Size = new Size(104, 35);
             labelAlbum.TabIndex = 2;
             labelAlbum.Text = "Альбом";
             // 
             // textBoxName
             // 
-            textBoxName.Location = new Point(187, 52);
+            textBoxName.Location = new Point(352, 61);
             textBoxName.Name = "textBoxName";
-            textBoxName.Size = new Size(125, 27);
+            textBoxName.Size = new Size(207, 27);
             textBoxName.TabIndex = 3;
             textBoxName.TextChanged += textBoxName_TextChanged;
             // 
             // textBoxPrice
             // 
-            textBoxPrice.Location = new Point(187, 106);
+            textBoxPrice.Location = new Point(352, 125);
             textBoxPrice.Name = "textBoxPrice";
-            textBoxPrice.Size = new Size(125, 27);
+            textBoxPrice.Size = new Size(207, 27);
             textBoxPrice.TabIndex = 4;
             textBoxPrice.TextChanged += textBoxPrice_TextChanged;
             // 
@@ -87,9 +90,9 @@
             // 
             comboBoxAlbum.DropDownStyle = ComboBoxStyle.DropDownList;
             comboBoxAlbum.FormattingEnabled = true;
-            comboBoxAlbum.Location = new Point(187, 170);
+            comboBoxAlbum.Location = new Point(352, 179);
             comboBoxAlbum.Name = "comboBoxAlbum";
-            comboBoxAlbum.Size = new Size(151, 28);
+            comboBoxAlbum.Size = new Size(207, 28);
             comboBoxAlbum.TabIndex = 6;
             comboBoxAlbum.TextChanged += comboBoxAlbum_TextChanged;
             // 
@@ -98,7 +101,7 @@
             buttonAddEntry.Enabled = false;
             buttonAddEntry.Location = new Point(75, 246);
             buttonAddEntry.Name = "buttonAddEntry";
-            buttonAddEntry.Size = new Size(151, 29);
+            buttonAddEntry.Size = new Size(213, 56);
             buttonAddEntry.TabIndex = 7;
             buttonAddEntry.Text = "Добавить запись";
             buttonAddEntry.UseVisualStyleBackColor = true;
@@ -108,9 +111,9 @@
             // buttonUpdateEntry
             // 
             buttonUpdateEntry.Enabled = false;
-            buttonUpdateEntry.Location = new Point(312, 246);
+            buttonUpdateEntry.Location = new Point(75, 246);
             buttonUpdateEntry.Name = "buttonUpdateEntry";
-            buttonUpdateEntry.Size = new Size(165, 29);
+            buttonUpdateEntry.Size = new Size(213, 56);
             buttonUpdateEntry.TabIndex = 8;
             buttonUpdateEntry.Text = "Изменить запись";
             buttonUpdateEntry.UseVisualStyleBackColor = true;
@@ -119,9 +122,9 @@
             // 
             // buttonBack
             // 
-            buttonBack.Location = new Point(610, 375);
+            buttonBack.Location = new Point(352, 242);
             buttonBack.Name = "buttonBack";
-            buttonBack.Size = new Size(94, 29);
+            buttonBack.Size = new Size(207, 60);
             buttonBack.TabIndex = 9;
             buttonBack.Text = "Назад";
             buttonBack.UseVisualStyleBackColor = true;
@@ -129,7 +132,7 @@
             // 
             // buttonAddAlbum
             // 
-            buttonAddAlbum.Location = new Point(378, 171);
+            buttonAddAlbum.Location = new Point(574, 179);
             buttonAddAlbum.Name = "buttonAddAlbum";
             buttonAddAlbum.Size = new Size(40, 29);
             buttonAddAlbum.TabIndex = 10;
@@ -141,7 +144,7 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(645, 341);
             Controls.Add(buttonAddAlbum);
             Controls.Add(buttonBack);
             Controls.Add(buttonUpdateEntry);

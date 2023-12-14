@@ -69,7 +69,7 @@
             // 
             dateTimePicker.Location = new Point(132, 30);
             dateTimePicker.Name = "dateTimePicker";
-            dateTimePicker.Size = new Size(250, 27);
+            dateTimePicker.Size = new Size(382, 27);
             dateTimePicker.TabIndex = 1;
             // 
             // labelTotalCost
@@ -85,14 +85,14 @@
             // 
             textBoxTotalPrice.Location = new Point(163, 72);
             textBoxTotalPrice.Name = "textBoxTotalPrice";
-            textBoxTotalPrice.Size = new Size(125, 27);
+            textBoxTotalPrice.Size = new Size(387, 27);
             textBoxTotalPrice.TabIndex = 3;
             textBoxTotalPrice.TextChanged += textBoxTotalPrice_TextChanged;
             // 
             // buttonCalculate
             // 
             buttonCalculate.Enabled = false;
-            buttonCalculate.Location = new Point(315, 72);
+            buttonCalculate.Location = new Point(612, 76);
             buttonCalculate.Name = "buttonCalculate";
             buttonCalculate.Size = new Size(94, 29);
             buttonCalculate.TabIndex = 4;
@@ -113,7 +113,7 @@
             // 
             textBoxDeliveryAddress.Location = new Point(163, 113);
             textBoxDeliveryAddress.Name = "textBoxDeliveryAddress";
-            textBoxDeliveryAddress.Size = new Size(125, 27);
+            textBoxDeliveryAddress.Size = new Size(387, 27);
             textBoxDeliveryAddress.TabIndex = 6;
             textBoxDeliveryAddress.TextChanged += textBoxDeliveryAddress_TextChanged;
             // 
@@ -133,7 +133,7 @@
             comboBoxStatus.Items.AddRange(new object[] { "В обработке", "Отправлен", "Доставлен" });
             comboBoxStatus.Location = new Point(163, 154);
             comboBoxStatus.Name = "comboBoxStatus";
-            comboBoxStatus.Size = new Size(151, 28);
+            comboBoxStatus.Size = new Size(387, 28);
             comboBoxStatus.TabIndex = 8;
             comboBoxStatus.TextChanged += comboBoxStatus_TextChanged;
             // 
@@ -152,18 +152,19 @@
             comboBoxCustomer.FormattingEnabled = true;
             comboBoxCustomer.Location = new Point(163, 206);
             comboBoxCustomer.Name = "comboBoxCustomer";
-            comboBoxCustomer.Size = new Size(151, 28);
+            comboBoxCustomer.Size = new Size(387, 28);
             comboBoxCustomer.TabIndex = 10;
             comboBoxCustomer.TextChanged += comboBoxCustomer_TextChanged;
             // 
             // buttonAddCustomer
             // 
-            buttonAddCustomer.Location = new Point(347, 206);
+            buttonAddCustomer.Location = new Point(612, 205);
             buttonAddCustomer.Name = "buttonAddCustomer";
             buttonAddCustomer.Size = new Size(35, 29);
             buttonAddCustomer.TabIndex = 11;
             buttonAddCustomer.Text = "+";
             buttonAddCustomer.UseVisualStyleBackColor = true;
+            buttonAddCustomer.Click += buttonAddCustomer_Click;
             // 
             // labelItem
             // 
@@ -180,7 +181,7 @@
             comboBoxItem.FormattingEnabled = true;
             comboBoxItem.Location = new Point(163, 257);
             comboBoxItem.Name = "comboBoxItem";
-            comboBoxItem.Size = new Size(151, 28);
+            comboBoxItem.Size = new Size(387, 28);
             comboBoxItem.TabIndex = 13;
             comboBoxItem.SelectedIndexChanged += comboBoxItem_SelectedIndexChanged;
             // 
@@ -194,7 +195,7 @@
             dataGridView1.RowHeadersWidth = 51;
             dataGridView1.RowTemplate.Height = 29;
             dataGridView1.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
-            dataGridView1.Size = new Size(300, 188);
+            dataGridView1.Size = new Size(526, 188);
             dataGridView1.TabIndex = 14;
             dataGridView1.CellValueChanged += dataGridView1_CellValueChanged;
             dataGridView1.RowsAdded += dataGridView1_RowsAdded;
@@ -203,7 +204,7 @@
             // labelOrderId
             // 
             labelOrderId.AutoSize = true;
-            labelOrderId.Location = new Point(520, 35);
+            labelOrderId.Location = new Point(520, 30);
             labelOrderId.Name = "labelOrderId";
             labelOrderId.Size = new Size(74, 20);
             labelOrderId.TabIndex = 15;
@@ -222,17 +223,18 @@
             // 
             // buttonAddItem
             // 
-            buttonAddItem.Location = new Point(347, 257);
+            buttonAddItem.Location = new Point(571, 256);
             buttonAddItem.Name = "buttonAddItem";
             buttonAddItem.Size = new Size(35, 29);
             buttonAddItem.TabIndex = 17;
             buttonAddItem.Text = "+";
             buttonAddItem.UseVisualStyleBackColor = true;
+            buttonAddItem.Click += buttonAddItem_Click;
             // 
             // buttonAddItemToOrder
             // 
             buttonAddItemToOrder.Enabled = false;
-            buttonAddItemToOrder.Location = new Point(410, 257);
+            buttonAddItemToOrder.Location = new Point(612, 256);
             buttonAddItemToOrder.Name = "buttonAddItemToOrder";
             buttonAddItemToOrder.Size = new Size(184, 29);
             buttonAddItemToOrder.TabIndex = 18;
@@ -243,7 +245,7 @@
             // buttonAddUnit
             // 
             buttonAddUnit.Enabled = false;
-            buttonAddUnit.Location = new Point(359, 332);
+            buttonAddUnit.Location = new Point(571, 329);
             buttonAddUnit.Name = "buttonAddUnit";
             buttonAddUnit.Size = new Size(191, 29);
             buttonAddUnit.TabIndex = 19;
@@ -254,7 +256,7 @@
             // buttonRemoveUnit
             // 
             buttonRemoveUnit.Enabled = false;
-            buttonRemoveUnit.Location = new Point(359, 387);
+            buttonRemoveUnit.Location = new Point(571, 389);
             buttonRemoveUnit.Name = "buttonRemoveUnit";
             buttonRemoveUnit.Size = new Size(191, 29);
             buttonRemoveUnit.TabIndex = 20;
@@ -265,7 +267,7 @@
             // buttonRemoveItem
             // 
             buttonRemoveItem.Enabled = false;
-            buttonRemoveItem.Location = new Point(359, 441);
+            buttonRemoveItem.Location = new Point(571, 441);
             buttonRemoveItem.Name = "buttonRemoveItem";
             buttonRemoveItem.Size = new Size(191, 29);
             buttonRemoveItem.TabIndex = 21;
@@ -276,9 +278,9 @@
             // buttonCreateOrder
             // 
             buttonCreateOrder.Enabled = false;
-            buttonCreateOrder.Location = new Point(24, 531);
+            buttonCreateOrder.Location = new Point(24, 512);
             buttonCreateOrder.Name = "buttonCreateOrder";
-            buttonCreateOrder.Size = new Size(133, 29);
+            buttonCreateOrder.Size = new Size(176, 48);
             buttonCreateOrder.TabIndex = 22;
             buttonCreateOrder.Text = "Создать заказ";
             buttonCreateOrder.UseVisualStyleBackColor = true;
@@ -288,9 +290,9 @@
             // buttonUpdateOrder
             // 
             buttonUpdateOrder.Enabled = false;
-            buttonUpdateOrder.Location = new Point(194, 531);
+            buttonUpdateOrder.Location = new Point(25, 512);
             buttonUpdateOrder.Name = "buttonUpdateOrder";
-            buttonUpdateOrder.Size = new Size(130, 29);
+            buttonUpdateOrder.Size = new Size(175, 48);
             buttonUpdateOrder.TabIndex = 23;
             buttonUpdateOrder.Text = "Изменить заказ";
             buttonUpdateOrder.UseVisualStyleBackColor = true;
@@ -299,9 +301,9 @@
             // 
             // buttonBack
             // 
-            buttonBack.Location = new Point(643, 531);
+            buttonBack.Location = new Point(571, 512);
             buttonBack.Name = "buttonBack";
-            buttonBack.Size = new Size(94, 29);
+            buttonBack.Size = new Size(182, 48);
             buttonBack.TabIndex = 24;
             buttonBack.Text = "Назад";
             buttonBack.UseVisualStyleBackColor = true;

@@ -43,43 +43,46 @@
             // labelName
             // 
             labelName.AutoSize = true;
+            labelName.Font = new Font("Segoe UI", 15F, FontStyle.Regular, GraphicsUnit.Point);
             labelName.Location = new Point(64, 41);
             labelName.Name = "labelName";
-            labelName.Size = new Size(77, 20);
+            labelName.Size = new Size(125, 35);
             labelName.TabIndex = 0;
             labelName.Text = "Название";
             // 
             // labelYear
             // 
             labelYear.AutoSize = true;
+            labelYear.Font = new Font("Segoe UI", 15F, FontStyle.Regular, GraphicsUnit.Point);
             labelYear.Location = new Point(64, 89);
             labelYear.Name = "labelYear";
-            labelYear.Size = new Size(33, 20);
+            labelYear.Size = new Size(56, 35);
             labelYear.TabIndex = 1;
             labelYear.Text = "Год";
             // 
             // labelPerformer
             // 
             labelPerformer.AutoSize = true;
+            labelPerformer.Font = new Font("Segoe UI", 15F, FontStyle.Regular, GraphicsUnit.Point);
             labelPerformer.Location = new Point(63, 135);
             labelPerformer.Name = "labelPerformer";
-            labelPerformer.Size = new Size(101, 20);
+            labelPerformer.Size = new Size(166, 35);
             labelPerformer.TabIndex = 2;
             labelPerformer.Text = "Исполнитель";
             // 
             // textBoxName
             // 
-            textBoxName.Location = new Point(170, 41);
+            textBoxName.Location = new Point(351, 49);
             textBoxName.Name = "textBoxName";
-            textBoxName.Size = new Size(125, 27);
+            textBoxName.Size = new Size(169, 27);
             textBoxName.TabIndex = 3;
             textBoxName.TextChanged += textBoxName_TextChanged;
             // 
             // textBoxYear
             // 
-            textBoxYear.Location = new Point(170, 86);
+            textBoxYear.Location = new Point(351, 97);
             textBoxYear.Name = "textBoxYear";
-            textBoxYear.Size = new Size(125, 27);
+            textBoxYear.Size = new Size(169, 27);
             textBoxYear.TabIndex = 4;
             textBoxYear.TextChanged += textBoxYear_TextChanged;
             // 
@@ -87,18 +90,18 @@
             // 
             comboBoxPerformer.DropDownStyle = ComboBoxStyle.DropDownList;
             comboBoxPerformer.FormattingEnabled = true;
-            comboBoxPerformer.Location = new Point(170, 132);
+            comboBoxPerformer.Location = new Point(351, 142);
             comboBoxPerformer.Name = "comboBoxPerformer";
-            comboBoxPerformer.Size = new Size(151, 28);
+            comboBoxPerformer.Size = new Size(169, 28);
             comboBoxPerformer.TabIndex = 5;
             comboBoxPerformer.SelectedIndexChanged += comboBoxPerformer_TextChanged;
             // 
             // buttonAddEntry
             // 
             buttonAddEntry.Enabled = false;
-            buttonAddEntry.Location = new Point(63, 203);
+            buttonAddEntry.Location = new Point(64, 219);
             buttonAddEntry.Name = "buttonAddEntry";
-            buttonAddEntry.Size = new Size(149, 29);
+            buttonAddEntry.Size = new Size(223, 57);
             buttonAddEntry.TabIndex = 6;
             buttonAddEntry.Text = "Добавить запись";
             buttonAddEntry.UseVisualStyleBackColor = true;
@@ -108,9 +111,9 @@
             // buttonUpdateEntry
             // 
             buttonUpdateEntry.Enabled = false;
-            buttonUpdateEntry.Location = new Point(227, 203);
+            buttonUpdateEntry.Location = new Point(63, 219);
             buttonUpdateEntry.Name = "buttonUpdateEntry";
-            buttonUpdateEntry.Size = new Size(151, 29);
+            buttonUpdateEntry.Size = new Size(224, 57);
             buttonUpdateEntry.TabIndex = 7;
             buttonUpdateEntry.Text = "Изменить запись";
             buttonUpdateEntry.UseVisualStyleBackColor = true;
@@ -119,9 +122,9 @@
             // 
             // buttonBack
             // 
-            buttonBack.Location = new Point(582, 388);
+            buttonBack.Location = new Point(404, 223);
             buttonBack.Name = "buttonBack";
-            buttonBack.Size = new Size(146, 30);
+            buttonBack.Size = new Size(189, 53);
             buttonBack.TabIndex = 8;
             buttonBack.Text = "Назад";
             buttonBack.UseVisualStyleBackColor = true;
@@ -129,7 +132,7 @@
             // 
             // buttonAddPerformer
             // 
-            buttonAddPerformer.Location = new Point(338, 131);
+            buttonAddPerformer.Location = new Point(553, 141);
             buttonAddPerformer.Name = "buttonAddPerformer";
             buttonAddPerformer.Size = new Size(40, 29);
             buttonAddPerformer.TabIndex = 9;
@@ -141,7 +144,7 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(643, 327);
             Controls.Add(buttonAddPerformer);
             Controls.Add(buttonBack);
             Controls.Add(buttonUpdateEntry);

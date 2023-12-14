@@ -51,9 +51,9 @@
             // 
             // buttonAdd
             // 
-            buttonAdd.Location = new Point(562, 92);
+            buttonAdd.Location = new Point(562, 44);
             buttonAdd.Name = "buttonAdd";
-            buttonAdd.Size = new Size(94, 29);
+            buttonAdd.Size = new Size(146, 62);
             buttonAdd.TabIndex = 1;
             buttonAdd.Text = "Добавить";
             buttonAdd.UseVisualStyleBackColor = true;
@@ -61,9 +61,9 @@
             // 
             // buttonUpdate
             // 
-            buttonUpdate.Location = new Point(562, 158);
+            buttonUpdate.Location = new Point(562, 152);
             buttonUpdate.Name = "buttonUpdate";
-            buttonUpdate.Size = new Size(94, 31);
+            buttonUpdate.Size = new Size(146, 58);
             buttonUpdate.TabIndex = 2;
             buttonUpdate.Text = "Изменить";
             buttonUpdate.UseVisualStyleBackColor = true;
@@ -71,9 +71,9 @@
             // 
             // buttonDelete
             // 
-            buttonDelete.Location = new Point(562, 231);
+            buttonDelete.Location = new Point(562, 244);
             buttonDelete.Name = "buttonDelete";
-            buttonDelete.Size = new Size(94, 29);
+            buttonDelete.Size = new Size(146, 56);
             buttonDelete.TabIndex = 3;
             buttonDelete.Text = "Удалить";
             buttonDelete.UseVisualStyleBackColor = true;
@@ -81,9 +81,9 @@
             // 
             // buttonBack
             // 
-            buttonBack.Location = new Point(562, 303);
+            buttonBack.Location = new Point(562, 352);
             buttonBack.Name = "buttonBack";
-            buttonBack.Size = new Size(94, 29);
+            buttonBack.Size = new Size(146, 62);
             buttonBack.TabIndex = 4;
             buttonBack.Text = "Назад";
             buttonBack.UseVisualStyleBackColor = true;

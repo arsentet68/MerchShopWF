@@ -62,9 +62,9 @@
             // 
             // buttonInteractiveAdd
             // 
-            buttonInteractiveAdd.Location = new Point(749, 54);
+            buttonInteractiveAdd.Location = new Point(749, 12);
             buttonInteractiveAdd.Name = "buttonInteractiveAdd";
-            buttonInteractiveAdd.Size = new Size(250, 29);
+            buttonInteractiveAdd.Size = new Size(250, 53);
             buttonInteractiveAdd.TabIndex = 1;
             buttonInteractiveAdd.Text = "Интерактивное добавление";
             buttonInteractiveAdd.UseVisualStyleBackColor = true;
@@ -72,9 +72,9 @@
             // 
             // buttonInteractiveUpdate
             // 
-            buttonInteractiveUpdate.Location = new Point(749, 120);
+            buttonInteractiveUpdate.Location = new Point(749, 78);
             buttonInteractiveUpdate.Name = "buttonInteractiveUpdate";
-            buttonInteractiveUpdate.Size = new Size(250, 29);
+            buttonInteractiveUpdate.Size = new Size(250, 54);
             buttonInteractiveUpdate.TabIndex = 2;
             buttonInteractiveUpdate.Text = "Интерактивное редактирование";
             buttonInteractiveUpdate.UseVisualStyleBackColor = true;
@@ -82,9 +82,9 @@
             // 
             // buttonBack
             // 
-            buttonBack.Location = new Point(749, 472);
+            buttonBack.Location = new Point(749, 528);
             buttonBack.Name = "buttonBack";
-            buttonBack.Size = new Size(250, 29);
+            buttonBack.Size = new Size(250, 53);
             buttonBack.TabIndex = 3;
             buttonBack.Text = "Назад";
             buttonBack.UseVisualStyleBackColor = true;
@@ -93,10 +93,12 @@
             // labelPerformer
             // 
             labelPerformer.AutoSize = true;
-            labelPerformer.ForeColor = Color.White;
-            labelPerformer.Location = new Point(812, 166);
+            labelPerformer.BackColor = Color.White;
+            labelPerformer.Font = new Font("Segoe UI", 15F, FontStyle.Regular, GraphicsUnit.Point);
+            labelPerformer.ForeColor = Color.Black;
+            labelPerformer.Location = new Point(781, 135);
             labelPerformer.Name = "labelPerformer";
-            labelPerformer.Size = new Size(101, 20);
+            labelPerformer.Size = new Size(166, 35);
             labelPerformer.TabIndex = 4;
             labelPerformer.Text = "Исполнитель";
             // 
@@ -104,7 +106,7 @@
             // 
             comboBoxPerformer.DropDownStyle = ComboBoxStyle.DropDownList;
             comboBoxPerformer.FormattingEnabled = true;
-            comboBoxPerformer.Location = new Point(749, 189);
+            comboBoxPerformer.Location = new Point(749, 173);
             comboBoxPerformer.Name = "comboBoxPerformer";
             comboBoxPerformer.Size = new Size(250, 28);
             comboBoxPerformer.TabIndex = 5;
@@ -113,10 +115,11 @@
             // labelOrder
             // 
             labelOrder.AutoSize = true;
-            labelOrder.ForeColor = Color.White;
-            labelOrder.Location = new Point(836, 229);
+            labelOrder.Font = new Font("Segoe UI", 15F, FontStyle.Regular, GraphicsUnit.Point);
+            labelOrder.ForeColor = Color.Black;
+            labelOrder.Location = new Point(827, 214);
             labelOrder.Name = "labelOrder";
-            labelOrder.Size = new Size(47, 20);
+            labelOrder.Size = new Size(78, 35);
             labelOrder.TabIndex = 6;
             labelOrder.Text = "Заказ";
             // 
@@ -133,10 +136,11 @@
             // labelStatus
             // 
             labelStatus.AutoSize = true;
-            labelStatus.ForeColor = Color.White;
-            labelStatus.Location = new Point(836, 292);
+            labelStatus.Font = new Font("Segoe UI", 15F, FontStyle.Regular, GraphicsUnit.Point);
+            labelStatus.ForeColor = Color.Black;
+            labelStatus.Location = new Point(827, 292);
             labelStatus.Name = "labelStatus";
-            labelStatus.Size = new Size(52, 20);
+            labelStatus.Size = new Size(87, 35);
             labelStatus.TabIndex = 8;
             labelStatus.Text = "Статус";
             // 
@@ -145,7 +149,7 @@
             comboBoxStatus.DropDownStyle = ComboBoxStyle.DropDownList;
             comboBoxStatus.FormattingEnabled = true;
             comboBoxStatus.Items.AddRange(new object[] { "В обработке", "Отправлен", "Доставлен" });
-            comboBoxStatus.Location = new Point(749, 315);
+            comboBoxStatus.Location = new Point(749, 330);
             comboBoxStatus.Name = "comboBoxStatus";
             comboBoxStatus.Size = new Size(250, 28);
             comboBoxStatus.TabIndex = 9;
@@ -163,16 +167,17 @@
             // labelTotalPrice
             // 
             labelTotalPrice.AutoSize = true;
-            labelTotalPrice.ForeColor = Color.White;
-            labelTotalPrice.Location = new Point(795, 357);
+            labelTotalPrice.Font = new Font("Segoe UI", 15F, FontStyle.Regular, GraphicsUnit.Point);
+            labelTotalPrice.ForeColor = Color.Black;
+            labelTotalPrice.Location = new Point(762, 377);
             labelTotalPrice.Name = "labelTotalPrice";
-            labelTotalPrice.Size = new Size(133, 20);
+            labelTotalPrice.Size = new Size(222, 35);
             labelTotalPrice.TabIndex = 15;
             labelTotalPrice.Text = "Общая стоимость";
             // 
             // textBoxTotalPrice1
             // 
-            textBoxTotalPrice1.Location = new Point(749, 380);
+            textBoxTotalPrice1.Location = new Point(749, 429);
             textBoxTotalPrice1.Name = "textBoxTotalPrice1";
             textBoxTotalPrice1.Size = new Size(103, 27);
             textBoxTotalPrice1.TabIndex = 16;
@@ -180,7 +185,7 @@
             // 
             // textBoxTotalPrice2
             // 
-            textBoxTotalPrice2.Location = new Point(900, 382);
+            textBoxTotalPrice2.Location = new Point(900, 429);
             textBoxTotalPrice2.Name = "textBoxTotalPrice2";
             textBoxTotalPrice2.Size = new Size(99, 27);
             textBoxTotalPrice2.TabIndex = 17;
@@ -189,8 +194,8 @@
             // 
             labelMinus.AutoSize = true;
             labelMinus.Font = new Font("Segoe UI", 15F, FontStyle.Regular, GraphicsUnit.Point);
-            labelMinus.ForeColor = Color.White;
-            labelMinus.Location = new Point(861, 377);
+            labelMinus.ForeColor = Color.Black;
+            labelMinus.Location = new Point(858, 421);
             labelMinus.Name = "labelMinus";
             labelMinus.Size = new Size(25, 35);
             labelMinus.TabIndex = 18;
@@ -198,9 +203,9 @@
             // 
             // button1
             // 
-            button1.Location = new Point(749, 426);
+            button1.Location = new Point(749, 473);
             button1.Name = "button1";
-            button1.Size = new Size(250, 29);
+            button1.Size = new Size(250, 49);
             button1.TabIndex = 19;
             button1.Text = "Применить фильтр по стоимости";
             button1.UseVisualStyleBackColor = true;
@@ -210,7 +215,7 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = Color.Black;
+            BackColor = Color.White;
             ClientSize = new Size(1102, 593);
             Controls.Add(button1);
             Controls.Add(labelMinus);

@@ -51,19 +51,20 @@
             // 
             // buttonAdd
             // 
-            buttonAdd.Location = new Point(596, 84);
+            buttonAdd.BackColor = Color.LightGray;
+            buttonAdd.Location = new Point(574, 43);
             buttonAdd.Name = "buttonAdd";
-            buttonAdd.Size = new Size(94, 29);
+            buttonAdd.Size = new Size(142, 45);
             buttonAdd.TabIndex = 1;
             buttonAdd.Text = "Добавить";
-            buttonAdd.UseVisualStyleBackColor = true;
+            buttonAdd.UseVisualStyleBackColor = false;
             buttonAdd.Click += buttonAdd_Click;
             // 
             // buttonUpdate
             // 
-            buttonUpdate.Location = new Point(596, 152);
+            buttonUpdate.Location = new Point(574, 145);
             buttonUpdate.Name = "buttonUpdate";
-            buttonUpdate.Size = new Size(94, 29);
+            buttonUpdate.Size = new Size(142, 47);
             buttonUpdate.TabIndex = 2;
             buttonUpdate.Text = "Изменить";
             buttonUpdate.UseVisualStyleBackColor = true;
@@ -71,9 +72,9 @@
             // 
             // buttonDelete
             // 
-            buttonDelete.Location = new Point(596, 225);
+            buttonDelete.Location = new Point(574, 254);
             buttonDelete.Name = "buttonDelete";
-            buttonDelete.Size = new Size(94, 29);
+            buttonDelete.Size = new Size(142, 47);
             buttonDelete.TabIndex = 3;
             buttonDelete.Text = "Удалить";
             buttonDelete.UseVisualStyleBackColor = true;
@@ -81,9 +82,9 @@
             // 
             // buttonBack
             // 
-            buttonBack.Location = new Point(596, 296);
+            buttonBack.Location = new Point(574, 361);
             buttonBack.Name = "buttonBack";
-            buttonBack.Size = new Size(94, 29);
+            buttonBack.Size = new Size(142, 45);
             buttonBack.TabIndex = 4;
             buttonBack.Text = "Назад";
             buttonBack.UseVisualStyleBackColor = true;
@@ -93,7 +94,7 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = Color.Black;
+            BackColor = Color.White;
             ClientSize = new Size(800, 450);
             Controls.Add(buttonBack);
             Controls.Add(buttonDelete);
