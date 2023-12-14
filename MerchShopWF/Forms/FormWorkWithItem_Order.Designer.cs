@@ -36,8 +36,6 @@
             buttonAddEntry = new Button();
             buttonUpdateEntry = new Button();
             buttonBack = new Button();
-            buttonAddItem = new Button();
-            buttonAddOrder = new Button();
             textBoxUnits = new TextBox();
             SuspendLayout();
             // 
@@ -125,26 +123,6 @@
             buttonBack.UseVisualStyleBackColor = true;
             buttonBack.Click += buttonBack_Click;
             // 
-            // buttonAddItem
-            // 
-            buttonAddItem.Location = new Point(610, 44);
-            buttonAddItem.Name = "buttonAddItem";
-            buttonAddItem.Size = new Size(40, 29);
-            buttonAddItem.TabIndex = 8;
-            buttonAddItem.Text = "+";
-            buttonAddItem.UseVisualStyleBackColor = true;
-            buttonAddItem.Click += buttonAddItem_Click;
-            // 
-            // buttonAddOrder
-            // 
-            buttonAddOrder.Location = new Point(610, 96);
-            buttonAddOrder.Name = "buttonAddOrder";
-            buttonAddOrder.Size = new Size(40, 29);
-            buttonAddOrder.TabIndex = 9;
-            buttonAddOrder.Text = "+";
-            buttonAddOrder.UseVisualStyleBackColor = true;
-            buttonAddOrder.Click += buttonAddOrder_Click;
-            // 
             // textBoxUnits
             // 
             textBoxUnits.Location = new Point(370, 155);
@@ -159,8 +137,6 @@
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(669, 342);
             Controls.Add(textBoxUnits);
-            Controls.Add(buttonAddOrder);
-            Controls.Add(buttonAddItem);
             Controls.Add(buttonBack);
             Controls.Add(buttonUpdateEntry);
             Controls.Add(buttonAddEntry);
@@ -186,8 +162,6 @@
         private Button buttonAddEntry;
         private Button buttonUpdateEntry;
         private Button buttonBack;
-        private Button buttonAddItem;
-        private Button buttonAddOrder;
         private TextBox textBoxUnits;
     }
 }

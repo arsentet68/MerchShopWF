@@ -41,7 +41,6 @@
             buttonAddEntry = new Button();
             buttonUpdateEntry = new Button();
             buttonBack = new Button();
-            buttonAddCustomer = new Button();
             SuspendLayout();
             // 
             // labelDate
@@ -173,22 +172,11 @@
             buttonBack.UseVisualStyleBackColor = true;
             buttonBack.Click += buttonBack_Click;
             // 
-            // buttonAddCustomer
-            // 
-            buttonAddCustomer.Location = new Point(627, 167);
-            buttonAddCustomer.Name = "buttonAddCustomer";
-            buttonAddCustomer.Size = new Size(43, 34);
-            buttonAddCustomer.TabIndex = 13;
-            buttonAddCustomer.Text = "+";
-            buttonAddCustomer.UseVisualStyleBackColor = true;
-            buttonAddCustomer.Click += buttonAddCustomer_Click;
-            // 
             // FormWorkWithOrder
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(676, 345);
-            Controls.Add(buttonAddCustomer);
             Controls.Add(buttonBack);
             Controls.Add(buttonUpdateEntry);
             Controls.Add(buttonAddEntry);
@@ -224,6 +212,5 @@
         private Button buttonAddEntry;
         private Button buttonUpdateEntry;
         private Button buttonBack;
-        private Button buttonAddCustomer;
     }
 }

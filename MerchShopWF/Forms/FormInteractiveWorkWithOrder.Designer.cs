@@ -39,13 +39,11 @@
             comboBoxStatus = new ComboBox();
             labelCustomer = new Label();
             comboBoxCustomer = new ComboBox();
-            buttonAddCustomer = new Button();
             labelItem = new Label();
             comboBoxItem = new ComboBox();
             dataGridView1 = new DataGridView();
             labelOrderId = new Label();
             textBoxOrderId = new TextBox();
-            buttonAddItem = new Button();
             buttonAddItemToOrder = new Button();
             buttonAddUnit = new Button();
             buttonRemoveUnit = new Button();
@@ -156,16 +154,6 @@
             comboBoxCustomer.TabIndex = 10;
             comboBoxCustomer.TextChanged += comboBoxCustomer_TextChanged;
             // 
-            // buttonAddCustomer
-            // 
-            buttonAddCustomer.Location = new Point(612, 205);
-            buttonAddCustomer.Name = "buttonAddCustomer";
-            buttonAddCustomer.Size = new Size(35, 29);
-            buttonAddCustomer.TabIndex = 11;
-            buttonAddCustomer.Text = "+";
-            buttonAddCustomer.UseVisualStyleBackColor = true;
-            buttonAddCustomer.Click += buttonAddCustomer_Click;
-            // 
             // labelItem
             // 
             labelItem.AutoSize = true;
@@ -220,16 +208,6 @@
             textBoxOrderId.Size = new Size(125, 27);
             textBoxOrderId.TabIndex = 16;
             textBoxOrderId.Visible = false;
-            // 
-            // buttonAddItem
-            // 
-            buttonAddItem.Location = new Point(571, 256);
-            buttonAddItem.Name = "buttonAddItem";
-            buttonAddItem.Size = new Size(35, 29);
-            buttonAddItem.TabIndex = 17;
-            buttonAddItem.Text = "+";
-            buttonAddItem.UseVisualStyleBackColor = true;
-            buttonAddItem.Click += buttonAddItem_Click;
             // 
             // buttonAddItemToOrder
             // 
@@ -321,13 +299,11 @@
             Controls.Add(buttonRemoveUnit);
             Controls.Add(buttonAddUnit);
             Controls.Add(buttonAddItemToOrder);
-            Controls.Add(buttonAddItem);
             Controls.Add(textBoxOrderId);
             Controls.Add(labelOrderId);
             Controls.Add(dataGridView1);
             Controls.Add(comboBoxItem);
             Controls.Add(labelItem);
-            Controls.Add(buttonAddCustomer);
             Controls.Add(comboBoxCustomer);
             Controls.Add(labelCustomer);
             Controls.Add(comboBoxStatus);
@@ -360,13 +336,11 @@
         private ComboBox comboBoxStatus;
         private Label labelCustomer;
         private ComboBox comboBoxCustomer;
-        private Button buttonAddCustomer;
         private Label labelItem;
         private ComboBox comboBoxItem;
         private DataGridView dataGridView1;
         private Label labelOrderId;
         private TextBox textBoxOrderId;
-        private Button buttonAddItem;
         private Button buttonAddItemToOrder;
         private Button buttonAddUnit;
         private Button buttonRemoveUnit;

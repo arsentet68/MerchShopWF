@@ -37,7 +37,6 @@
             buttonAddEntry = new Button();
             buttonUpdateEntry = new Button();
             buttonBack = new Button();
-            buttonAddPerformer = new Button();
             SuspendLayout();
             // 
             // labelName
@@ -130,22 +129,11 @@
             buttonBack.UseVisualStyleBackColor = true;
             buttonBack.Click += buttonBack_Click;
             // 
-            // buttonAddPerformer
-            // 
-            buttonAddPerformer.Location = new Point(553, 141);
-            buttonAddPerformer.Name = "buttonAddPerformer";
-            buttonAddPerformer.Size = new Size(40, 29);
-            buttonAddPerformer.TabIndex = 9;
-            buttonAddPerformer.Text = "+";
-            buttonAddPerformer.UseVisualStyleBackColor = true;
-            buttonAddPerformer.Click += buttonAddPerformer_Click;
-            // 
             // FormWorkWithAlbum
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(643, 327);
-            Controls.Add(buttonAddPerformer);
             Controls.Add(buttonBack);
             Controls.Add(buttonUpdateEntry);
             Controls.Add(buttonAddEntry);
@@ -173,6 +161,5 @@
         private Button buttonAddEntry;
         private Button buttonUpdateEntry;
         private Button buttonBack;
-        private Button buttonAddPerformer;
     }
 }
