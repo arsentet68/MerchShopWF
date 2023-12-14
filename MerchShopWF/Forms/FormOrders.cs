@@ -100,33 +100,7 @@ namespace MerchShopWF
 
         private void FormOrders_VisibleChanged(object sender, EventArgs e)
         {
-            using (MerchShopDatabaseContext dbContext = new MerchShopDatabaseContext())
-            {
-                var q = from orders in dbContext.Orders
-                        join customers in dbContext.Customers on orders.CustomerId equals customers.Id
-                        orderby orders.Id
-                        select new ExtendedOrderInfo()
-                        {
-                            Id = orders.Id,
-                            Date = orders.Date,
-                            TotalPrice = orders.TotalPrice,
-                            DeliveryAddress = orders.DeliveryAddress,
-                            Status = orders.Status,
-                            CustomerId = orders.CustomerId,
-                            CustomerName = customers.Name
-                        };
-                var OrderList = q.ToList();
-                var bindingList = new BindingList<ExtendedOrderInfo>(OrderList);
-                var source = new BindingSource(bindingList, null);
-                dataGridView1.DataSource = source;
-                dataGridView1.Columns["CustomerId"].Visible = false;
-                dataGridView1.Columns["Id"].HeaderText = "ID";
-                dataGridView1.Columns["Date"].HeaderText = "Дата";
-                dataGridView1.Columns["TotalPrice"].HeaderText = "Общая стоимость";
-                dataGridView1.Columns["DeliveryAddress"].HeaderText = "Адрес доставки";
-                dataGridView1.Columns["Status"].HeaderText = "Статус";
-                dataGridView1.Columns["CustomerName"].HeaderText = "Покупатель";
-            }
+
         }
     }
 }
