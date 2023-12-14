@@ -53,7 +53,7 @@
             // 
             textBoxName.Location = new Point(352, 55);
             textBoxName.Name = "textBoxName";
-            textBoxName.Size = new Size(125, 27);
+            textBoxName.Size = new Size(192, 27);
             textBoxName.TabIndex = 1;
             textBoxName.TextChanged += textBoxName_TextChanged;
             // 
@@ -69,9 +69,9 @@
             // 
             // textBoxCountry
             // 
-            textBoxCountry.Location = new Point(352, 108);
+            textBoxCountry.Location = new Point(352, 117);
             textBoxCountry.Name = "textBoxCountry";
-            textBoxCountry.Size = new Size(125, 27);
+            textBoxCountry.Size = new Size(192, 27);
             textBoxCountry.TabIndex = 3;
             textBoxCountry.TextChanged += textBoxCountry_TextChanged;
             // 
@@ -89,7 +89,7 @@
             // 
             textBoxDebutYear.Location = new Point(352, 171);
             textBoxDebutYear.Name = "textBoxDebutYear";
-            textBoxDebutYear.Size = new Size(125, 27);
+            textBoxDebutYear.Size = new Size(192, 27);
             textBoxDebutYear.TabIndex = 5;
             textBoxDebutYear.TextChanged += textBoxDebutYear_TextChanged;
             // 

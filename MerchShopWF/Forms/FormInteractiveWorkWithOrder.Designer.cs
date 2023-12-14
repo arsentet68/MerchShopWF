@@ -195,7 +195,7 @@
             dataGridView1.RowHeadersWidth = 51;
             dataGridView1.RowTemplate.Height = 29;
             dataGridView1.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
-            dataGridView1.Size = new Size(526, 188);
+            dataGridView1.Size = new Size(429, 188);
             dataGridView1.TabIndex = 14;
             dataGridView1.CellValueChanged += dataGridView1_CellValueChanged;
             dataGridView1.RowsAdded += dataGridView1_RowsAdded;
@@ -245,9 +245,9 @@
             // buttonAddUnit
             // 
             buttonAddUnit.Enabled = false;
-            buttonAddUnit.Location = new Point(571, 329);
+            buttonAddUnit.Location = new Point(545, 329);
             buttonAddUnit.Name = "buttonAddUnit";
-            buttonAddUnit.Size = new Size(191, 29);
+            buttonAddUnit.Size = new Size(217, 42);
             buttonAddUnit.TabIndex = 19;
             buttonAddUnit.Text = "Увеличить количество";
             buttonAddUnit.UseVisualStyleBackColor = true;
@@ -256,9 +256,9 @@
             // buttonRemoveUnit
             // 
             buttonRemoveUnit.Enabled = false;
-            buttonRemoveUnit.Location = new Point(571, 389);
+            buttonRemoveUnit.Location = new Point(545, 387);
             buttonRemoveUnit.Name = "buttonRemoveUnit";
-            buttonRemoveUnit.Size = new Size(191, 29);
+            buttonRemoveUnit.Size = new Size(217, 37);
             buttonRemoveUnit.TabIndex = 20;
             buttonRemoveUnit.Text = "Уменьшить количество";
             buttonRemoveUnit.UseVisualStyleBackColor = true;
@@ -267,9 +267,9 @@
             // buttonRemoveItem
             // 
             buttonRemoveItem.Enabled = false;
-            buttonRemoveItem.Location = new Point(571, 441);
+            buttonRemoveItem.Location = new Point(545, 441);
             buttonRemoveItem.Name = "buttonRemoveItem";
-            buttonRemoveItem.Size = new Size(191, 29);
+            buttonRemoveItem.Size = new Size(217, 35);
             buttonRemoveItem.TabIndex = 21;
             buttonRemoveItem.Text = "Удалить";
             buttonRemoveItem.UseVisualStyleBackColor = true;
