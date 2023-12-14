@@ -126,7 +126,7 @@ namespace MerchShopWF
 
         private void buttonBack_Click(object sender, EventArgs e)
         {
-            FormItems formItems = new FormItems();
+            var formItems = (FormItems)Tag;
             formItems.Show();
             Close();
         }

@@ -38,6 +38,7 @@
             // 
             // dataGridView1
             // 
+            dataGridView1.AllowUserToAddRows = false;
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridView1.Location = new Point(24, 44);
             dataGridView1.Name = "dataGridView1";
@@ -101,6 +102,7 @@
             Name = "FormOrders";
             Text = "Заказы";
             Load += FormOrders_Load;
+            VisibleChanged += FormOrders_VisibleChanged;
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ResumeLayout(false);
         }

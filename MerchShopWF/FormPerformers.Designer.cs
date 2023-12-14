@@ -105,6 +105,7 @@
             Name = "FormPerformers";
             Text = "Исполнители";
             Load += FormPerformers_Load;
+            VisibleChanged += FormPerformers_VisibleChanged;
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ResumeLayout(false);
         }

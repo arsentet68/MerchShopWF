@@ -38,6 +38,7 @@
             // 
             // dataGridView1
             // 
+            dataGridView1.AllowUserToAddRows = false;
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridView1.Location = new Point(44, 43);
             dataGridView1.Name = "dataGridView1";
@@ -102,6 +103,7 @@
             Name = "FormAlbums";
             Text = "Альбомы";
             Load += FormAlbums_Load;
+            VisibleChanged += FormAlbums_VisibleChanged;
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ResumeLayout(false);
         }

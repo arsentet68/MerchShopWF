@@ -61,7 +61,7 @@ namespace MerchShopWF
 
         private void buttonBack_Click(object sender, EventArgs e)
         {
-            FormPerformers formPerformers = new FormPerformers();
+            var formPerformers = (FormPerformers)Tag;
             formPerformers.Show();
             Close();
         }

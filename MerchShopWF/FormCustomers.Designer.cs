@@ -38,6 +38,7 @@
             // 
             // dataGridView1
             // 
+            dataGridView1.AllowUserToAddRows = false;
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridView1.Location = new Point(28, 35);
             dataGridView1.Name = "dataGridView1";
@@ -101,6 +102,7 @@
             Name = "FormCustomers";
             Text = "Покупатели";
             Load += FormCustomers_Load;
+            VisibleChanged += FormCustomers_VisibleChanged;
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ResumeLayout(false);
         }

@@ -70,37 +70,47 @@
             // 
             // comboBoxItem
             // 
+            comboBoxItem.DropDownStyle = ComboBoxStyle.DropDownList;
             comboBoxItem.FormattingEnabled = true;
             comboBoxItem.Location = new Point(145, 43);
             comboBoxItem.Name = "comboBoxItem";
             comboBoxItem.Size = new Size(151, 28);
             comboBoxItem.TabIndex = 3;
+            comboBoxItem.TextChanged += ComboBoxItem_TextChanged;
             // 
             // comboBoxOrder
             // 
+            comboBoxOrder.DropDownStyle = ComboBoxStyle.DropDownList;
             comboBoxOrder.FormattingEnabled = true;
             comboBoxOrder.Location = new Point(145, 93);
             comboBoxOrder.Name = "comboBoxOrder";
             comboBoxOrder.Size = new Size(151, 28);
             comboBoxOrder.TabIndex = 4;
+            comboBoxOrder.TextChanged += ComboBoxOrder_TextChanged;
             // 
             // buttonAddEntry
             // 
+            buttonAddEntry.Enabled = false;
             buttonAddEntry.Location = new Point(60, 218);
             buttonAddEntry.Name = "buttonAddEntry";
             buttonAddEntry.Size = new Size(136, 29);
             buttonAddEntry.TabIndex = 5;
             buttonAddEntry.Text = "Добавить запись";
             buttonAddEntry.UseVisualStyleBackColor = true;
+            buttonAddEntry.Visible = false;
+            buttonAddEntry.Click += buttonAddEntry_Click;
             // 
             // buttonUpdateEntry
             // 
+            buttonUpdateEntry.Enabled = false;
             buttonUpdateEntry.Location = new Point(224, 218);
             buttonUpdateEntry.Name = "buttonUpdateEntry";
             buttonUpdateEntry.Size = new Size(145, 29);
             buttonUpdateEntry.TabIndex = 6;
             buttonUpdateEntry.Text = "Изменить запись";
             buttonUpdateEntry.UseVisualStyleBackColor = true;
+            buttonUpdateEntry.Visible = false;
+            buttonUpdateEntry.Click += buttonUpdateEntry_Click;
             // 
             // buttonBack
             // 
@@ -110,6 +120,7 @@
             buttonBack.TabIndex = 7;
             buttonBack.Text = "Назад";
             buttonBack.UseVisualStyleBackColor = true;
+            buttonBack.Click += buttonBack_Click;
             // 
             // buttonAddItem
             // 
@@ -119,6 +130,7 @@
             buttonAddItem.TabIndex = 8;
             buttonAddItem.Text = "+";
             buttonAddItem.UseVisualStyleBackColor = true;
+            buttonAddItem.Click += buttonAddItem_Click;
             // 
             // buttonAddOrder
             // 
@@ -128,6 +140,7 @@
             buttonAddOrder.TabIndex = 9;
             buttonAddOrder.Text = "+";
             buttonAddOrder.UseVisualStyleBackColor = true;
+            buttonAddOrder.Click += buttonAddOrder_Click;
             // 
             // textBoxUnits
             // 
@@ -135,6 +148,7 @@
             textBoxUnits.Name = "textBoxUnits";
             textBoxUnits.Size = new Size(125, 27);
             textBoxUnits.TabIndex = 10;
+            textBoxUnits.TextChanged += textBoxUnits_TextChanged;
             // 
             // FormWorkWithItem_Order
             // 

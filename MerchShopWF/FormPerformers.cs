@@ -36,7 +36,10 @@ namespace MerchShopWF
                 var source = new BindingSource(bindingList, null);
                 dataGridView1.DataSource = source;
                 dataGridView1.Columns["Albums"].Visible = false;
-                dataGridView1.Columns[0].HeaderText = "ID";
+                dataGridView1.Columns["Id"].HeaderText = "ID";
+                dataGridView1.Columns["Name"].HeaderText = "Название";
+                dataGridView1.Columns["Country"].HeaderText = "Страна";
+                dataGridView1.Columns["DebutYear"].HeaderText = "Год начала карьеры";
             }
         }
 
@@ -45,8 +48,9 @@ namespace MerchShopWF
             FormWorkWithPerformer formWorkWithPerformer = new FormWorkWithPerformer();
             formWorkWithPerformer.actionNumber = 1;
             formWorkWithPerformer.Text = "Добавление записи";
+            formWorkWithPerformer.Tag = this;
             formWorkWithPerformer.Show();
-            Close();
+            Hide();
         }
 
         private void buttonUpdate_Click(object sender, EventArgs e)
@@ -56,8 +60,9 @@ namespace MerchShopWF
             formWorkWithPerformer.actionNumber = 2;
             formWorkWithPerformer.selectedId = selectedId;
             formWorkWithPerformer.Text = "Изменение записи";
+            formWorkWithPerformer.Tag = this;
             formWorkWithPerformer.Show();
-            Close();
+            Hide();
         }
 
         private void buttonDelete_Click(object sender, EventArgs e)
@@ -87,13 +92,39 @@ namespace MerchShopWF
                     dbContext.SaveChanges();
                     MessageBox.Show("Запись удалена.", "Удаление", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
+                this.OnLoad(EventArgs.Empty);
             }
         }
         private void buttonBack_Click(object sender, EventArgs e)
         {
-            FormTables formTables = new FormTables();
+            var formTables = (FormTables)Tag;
             formTables.Show();
-            Close();
+            Hide();
+        }
+
+        private void FormPerformers_VisibleChanged(object sender, EventArgs e)
+        {
+            using (MerchShopDatabaseContext dbContext = new MerchShopDatabaseContext())
+            {
+                var q = from performers in dbContext.Performers
+                        select new Performer()
+                        {
+                            Id = performers.Id,
+                            Name = performers.Name,
+                            Country = performers.Country,
+                            DebutYear = performers.DebutYear,
+                            Albums = performers.Albums
+                        };
+                var InfoList = q.ToList();
+                var bindingList = new BindingList<Performer>(InfoList);
+                var source = new BindingSource(bindingList, null);
+                dataGridView1.DataSource = source;
+                dataGridView1.Columns["Albums"].Visible = false;
+                dataGridView1.Columns["Id"].HeaderText = "ID";
+                dataGridView1.Columns["Name"].HeaderText = "Название";
+                dataGridView1.Columns["Country"].HeaderText = "Страна";
+                dataGridView1.Columns["DebutYear"].HeaderText = "Год начала карьеры";
+            }
         }
     }
 }

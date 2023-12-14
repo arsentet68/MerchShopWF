@@ -9,15 +9,17 @@ namespace MerchShopWF
 
         private void buttonInformation_Click(object sender, EventArgs e)
         {
-            formInformation newForm = new formInformation();
-            newForm.Show();
+            formInformation formInformation = new formInformation();
+            formInformation.Tag = this;
+            formInformation.Show();
             Hide();
         }
 
         private void buttonChooseTable_Click(object sender, EventArgs e)
         {
-            FormTables newForm = new FormTables();
-            newForm.Show();
+            FormTables formTables = new FormTables();
+            formTables.Tag = this;
+            formTables.Show();
             Hide();
         }
     }

@@ -42,7 +42,6 @@
             buttonUpdateEntry = new Button();
             buttonBack = new Button();
             buttonAddCustomer = new Button();
-            buttonCalculate = new Button();
             SuspendLayout();
             // 
             // labelDate
@@ -137,22 +136,26 @@
             // 
             // buttonAddEntry
             // 
+            buttonAddEntry.Enabled = false;
             buttonAddEntry.Location = new Point(48, 230);
             buttonAddEntry.Name = "buttonAddEntry";
             buttonAddEntry.Size = new Size(146, 29);
             buttonAddEntry.TabIndex = 10;
             buttonAddEntry.Text = "Добавить запись";
             buttonAddEntry.UseVisualStyleBackColor = true;
+            buttonAddEntry.Visible = false;
             buttonAddEntry.Click += buttonAddEntry_Click;
             // 
             // buttonUpdateEntry
             // 
+            buttonUpdateEntry.Enabled = false;
             buttonUpdateEntry.Location = new Point(216, 230);
             buttonUpdateEntry.Name = "buttonUpdateEntry";
             buttonUpdateEntry.Size = new Size(167, 29);
             buttonUpdateEntry.TabIndex = 11;
             buttonUpdateEntry.Text = "Изменить запись";
             buttonUpdateEntry.UseVisualStyleBackColor = true;
+            buttonUpdateEntry.Visible = false;
             buttonUpdateEntry.Click += buttonUpdateEntry_Click;
             // 
             // buttonBack
@@ -175,22 +178,11 @@
             buttonAddCustomer.UseVisualStyleBackColor = true;
             buttonAddCustomer.Click += buttonAddCustomer_Click;
             // 
-            // buttonCalculate
-            // 
-            buttonCalculate.Location = new Point(408, 59);
-            buttonCalculate.Name = "buttonCalculate";
-            buttonCalculate.Size = new Size(94, 29);
-            buttonCalculate.TabIndex = 14;
-            buttonCalculate.Text = "Высчитать";
-            buttonCalculate.UseVisualStyleBackColor = true;
-            buttonCalculate.Visible = false;
-            // 
             // FormWorkWithOrder
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
-            Controls.Add(buttonCalculate);
             Controls.Add(buttonAddCustomer);
             Controls.Add(buttonBack);
             Controls.Add(buttonUpdateEntry);
@@ -228,6 +220,5 @@
         private Button buttonUpdateEntry;
         private Button buttonBack;
         private Button buttonAddCustomer;
-        private Button buttonCalculate;
     }
 }

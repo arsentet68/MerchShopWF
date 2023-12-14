@@ -131,7 +131,7 @@ namespace MerchShopWF
 
         private void buttonBack_Click(object sender, EventArgs e)
         {
-            FormOrders formOrders = new FormOrders();
+            var formOrders = (FormOrders)Tag;
             formOrders.Show();
             Close();
         }

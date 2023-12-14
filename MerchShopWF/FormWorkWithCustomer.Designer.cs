@@ -73,22 +73,26 @@
             // 
             // buttonAddEntry
             // 
+            buttonAddEntry.Enabled = false;
             buttonAddEntry.Location = new Point(71, 153);
             buttonAddEntry.Name = "buttonAddEntry";
             buttonAddEntry.Size = new Size(148, 29);
             buttonAddEntry.TabIndex = 4;
             buttonAddEntry.Text = "Добавить запись";
             buttonAddEntry.UseVisualStyleBackColor = true;
+            buttonAddEntry.Visible = false;
             buttonAddEntry.Click += buttonAddEntry_Click;
             // 
             // buttonUpdateEntry
             // 
+            buttonUpdateEntry.Enabled = false;
             buttonUpdateEntry.Location = new Point(257, 153);
             buttonUpdateEntry.Name = "buttonUpdateEntry";
             buttonUpdateEntry.Size = new Size(150, 29);
             buttonUpdateEntry.TabIndex = 5;
             buttonUpdateEntry.Text = "Изменить запись";
             buttonUpdateEntry.UseVisualStyleBackColor = true;
+            buttonUpdateEntry.Visible = false;
             buttonUpdateEntry.Click += buttonUpdateEntry_Click;
             // 
             // buttonBack

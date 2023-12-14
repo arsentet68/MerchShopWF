@@ -78,7 +78,7 @@ namespace MerchShopWF
 
         private void buttonBack_Click(object sender, EventArgs e)
         {
-            FormCustomers formCustomers = new FormCustomers();
+            var formCustomers = (FormCustomers)Tag;
             formCustomers.Show();
             Close();
         }

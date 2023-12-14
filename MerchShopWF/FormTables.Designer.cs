@@ -34,6 +34,7 @@
             buttonCustomers = new Button();
             buttonOrders = new Button();
             buttonItem_Order = new Button();
+            buttonBack = new Button();
             SuspendLayout();
             // 
             // buttonPerformer
@@ -100,12 +101,23 @@
             buttonItem_Order.UseVisualStyleBackColor = true;
             buttonItem_Order.Click += buttonItem_Order_Click;
             // 
+            // buttonBack
+            // 
+            buttonBack.Location = new Point(641, 389);
+            buttonBack.Name = "buttonBack";
+            buttonBack.Size = new Size(94, 29);
+            buttonBack.TabIndex = 6;
+            buttonBack.Text = "Назад";
+            buttonBack.UseVisualStyleBackColor = true;
+            buttonBack.Click += buttonBack_Click;
+            // 
             // FormTables
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Black;
             ClientSize = new Size(800, 450);
+            Controls.Add(buttonBack);
             Controls.Add(buttonItem_Order);
             Controls.Add(buttonOrders);
             Controls.Add(buttonCustomers);
@@ -125,5 +137,6 @@
         private Button buttonCustomers;
         private Button buttonOrders;
         private Button buttonItem_Order;
+        private Button buttonBack;
     }
 }

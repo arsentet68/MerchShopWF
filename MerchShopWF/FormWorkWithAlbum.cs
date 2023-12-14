@@ -115,7 +115,7 @@ namespace MerchShopWF
         }
         private void buttonBack_Click(object sender, EventArgs e)
         {
-            FormAlbums formAlbums = new FormAlbums();
+            var formAlbums = (FormAlbums)Tag;
             formAlbums.Show();
             Close();
         }
